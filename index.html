@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8c8dc">
+  <meta name="description" content="A tiny birthday universe made with love.">
+  <title>Birthday Gift Universe ✦</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div id="sparkleLayer" class="sparkle-layer" aria-hidden="true"></div>
+
+  <header class="topbar" id="topbar">
+    <a class="brand" href="#welcome" aria-label="Birthday Gift Universe home">
+      <span class="brand-mark">✦</span> little universe
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#gifts">Gifts</a>
+      <a href="#memory">Memory PC</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#final-note">Birthday note</a>
+    </nav>
+    <button id="musicToggle" class="icon-button music-toggle" type="button" aria-label="Toggle background music" title="Optional music">♫ <span>Music</span></button>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="welcome">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> a little surprise, just for you</p>
+        <h1>Happy Birthday,<br><span id="recipientName">Your Special Person</span><span class="title-heart"> ♡</span></h1>
+        <p class="hero-subtitle" id="welcomeSubtitle">A little universe made of memories, music, letters, and love.</p>
+        <button class="primary-button" id="startSurprise" type="button">Open your surprise <span>↗</span></button>
+        <p class="tiny-note">made with a little extra love <span>✧</span></p>
+      </div>
+      <div class="hero-art" aria-label="A wrapped birthday present">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="floating-sticker sticker-star">✦</span>
+        <span class="floating-sticker sticker-heart">♥</span>
+        <span class="floating-sticker sticker-bow">୨୧</span>
+        <div class="gift-stage" id="heroGift" role="button" tabindex="0" aria-label="Open the birthday gift">
+          <div class="gift-glow"></div>
+          <div class="gift-box">
+            <div class="gift-lid"><span class="lid-ribbon"></span><span class="bow bow-left"></span><span class="bow bow-right"></span><span class="bow-knot"></span></div>
+            <div class="gift-body"><span class="body-ribbon"></span><span class="gift-heart">♡</span></div>
+          </div>
+          <div class="gift-shadow"></div>
+        </div>
+        <div class="hero-caption"><span class="caption-sparkle">✧</span> one box, eight little surprises <span class="caption-sparkle">✧</span></div>
+      </div>
+      <a class="scroll-cue" href="#gift-opening"><span></span> scroll to unwrap</a>
+    </section>
+
+    <section class="opening-section section-shell" id="gift-opening">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 01 · the unwrapping</p>
+        <h2>Something is waiting <span>inside</span></h2>
+        <p>Give the little box a tap. It has been keeping secrets.</p>
+      </div>
+      <div class="opening-stage" id="openingStage">
+        <div class="burst" aria-hidden="true"></div>
+        <div class="big-gift gift-closed" id="bigGift" role="button" tabindex="0" aria-label="Open the big birthday gift">
+          <div class="big-gift-lid"><span class="big-bow">୨୧</span></div>
+          <div class="big-gift-box"><span class="big-ribbon"></span><span class="big-ribbon-horizontal"></span><span class="box-label">FOR YOU ♡</span></div>
+          <span class="gift-pop pop-one">🧸</span><span class="gift-pop pop-two">💌</span><span class="gift-pop pop-three">🌷</span><span class="gift-pop pop-four">✨</span>
+        </div>
+        <p class="opening-hint" id="openingHint">tap the box to open it ✦</p>
+        <button id="reopenGifts" class="text-button hidden" type="button">Show my gifts again ↻</button>
+      </div>
+    </section>
+
+    <section class="gifts-section section-shell" id="gifts">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 02 · little treasures</p>
+        <h2>Eight gifts, <span>one big smile</span></h2>
+        <p>Each tiny package leads to something you made just for this moment.</p>
+      </div>
+      <div class="gift-grid" id="giftGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="memory-section section-shell" id="memory">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 03 · saved in my heart</p>
+        <h2>Our little <span>memory computer</span></h2>
+        <p>Open a folder, then travel through photos and videos one memory at a time.</p>
+      </div>
+      <div class="computer-wrap">
+        <div class="computer">
+          <div class="monitor-shell">
+            <div class="monitor-top"><span class="monitor-camera"></span><span class="monitor-label">little memories OS</span><span class="monitor-status"><i></i> online</span></div>
+            <div class="monitor-screen" id="monitorScreen">
+              <div class="desktop-wallpaper"></div>
+              <div class="desktop-topline"><span>♡ memories.exe</span><span id="desktopClock">a lovely day</span></div>
+              <div class="desktop-icons">
+                <button class="desktop-icon" data-open-window="viewerWindow" type="button"><span class="desktop-icon-art folder-art">♡</span><span>My Memories</span></button>
+                <button class="desktop-icon" data-open-window="galleryWindow" type="button"><span class="desktop-icon-art photo-art">▧</span><span>Photo Gallery</span></button>
+                <button class="desktop-icon" data-open-window="noteWindow" type="button"><span class="desktop-icon-art note-art">✉</span><span>Birthday Note</span></button>
+                <button class="desktop-icon" id="desktopMusic" type="button"><span class="desktop-icon-art music-art">♫</span><span>Music Player</span></button>
+              </div>
+              <div class="desktop-welcome"><span class="mini-sparkle">✦</span><strong>Welcome to our tiny corner</strong><small>Every picture keeps a little piece of time.</small><button type="button" data-open-window="viewerWindow">Open memories ↗</button></div>
+
+              <div class="app-window hidden" id="viewerWindow" role="dialog" aria-label="Memory viewer">
+                <div class="window-titlebar"><span>▧ &nbsp; Our Little Memories</span><div class="window-controls"><button type="button" data-minimize="viewerWindow" aria-label="Minimize">−</button><button type="button" data-maximize="viewerWindow" aria-label="Maximize">□</button><button type="button" data-close-window="viewerWindow" aria-label="Close">×</button></div></div>
+                <div class="window-content viewer-content">
+                  <nav class="memory-folders" aria-label="Memory folders">
+                    <button type="button" class="memory-folder active" data-memory-filter="photos">🖼 Photos</button>
+                    <button type="button" class="memory-folder" data-memory-filter="videos">▶ Videos</button>
+                    <button type="button" class="memory-folder" data-memory-filter="cute">💌 Cute Msg</button>
+                    <button type="button" class="memory-folder" data-memory-filter="audio">♫ Audio</button>
+                  </nav>
+                  <div class="memory-folder-note" id="memoryFolderNote">Photos folder · swipe or use arrows to browse</div>
+                  <div class="media-frame" id="memoryFrame"><div class="empty-media"><span>♡</span><strong>Your memories go here</strong><p>Add photos and videos in <code>assets/images</code> and <code>assets/videos</code>, then update <code>js/config.js</code>.</p></div></div>
+                  <div class="media-caption"><span id="memoryCaption">A memory waiting to be added</span><small id="memoryDate"></small></div>
+                  <div class="viewer-controls"><button type="button" id="prevMemory" aria-label="Previous memory">←</button><div class="viewer-progress"><span id="memoryCounter">0 / 0</span><div class="progress-track"><i id="memoryProgress"></i></div></div><button type="button" id="nextMemory" aria-label="Next memory">→</button></div>
+                  <div class="thumbnail-strip" id="thumbnailStrip"></div>
+                </div>
+              </div>
+
+              <div class="app-window hidden" id="galleryWindow" role="dialog" aria-label="Photo gallery">
+                <div class="window-titlebar"><span>▧ &nbsp; Floating Photo Gallery</span><div class="window-controls"><button type="button" data-minimize="galleryWindow" aria-label="Minimize">−</button><button type="button" data-maximize="galleryWindow" aria-label="Maximize">□</button><button type="button" data-close-window="galleryWindow" aria-label="Close">×</button></div></div>
+                <div class="window-content mini-gallery-content">
+                  <div class="mini-gallery-frame" id="miniGalleryFrame"><div class="empty-media"><span>✿</span><strong>Your gallery is waiting</strong><p>Add photos to the gallery list in <code>js/config.js</code>.</p></div></div>
+                  <p id="miniGalleryCaption">A little gallery of lovely things.</p>
+                  <div class="viewer-controls"><button id="miniGalleryPrev" type="button" aria-label="Previous gallery image">←</button><button id="miniGalleryPlay" type="button">Ⅱ Pause</button><button id="miniGalleryNext" type="button" aria-label="Next gallery image">→</button></div>
+                </div>
+              </div>
+
+              <div class="app-window note-window hidden" id="noteWindow" role="dialog" aria-label="Birthday note">
+                <div class="window-titlebar"><span>✉ &nbsp; A note for you</span><div class="window-controls"><button type="button" data-close-window="noteWindow" aria-label="Close">×</button></div></div>
+                <div class="window-content note-content"><span class="note-stamp">FOR YOU ♡</span><h3 id="pcNoteTitle">A tiny birthday note</h3><p id="pcNoteText">Some people make ordinary days feel a little more magical. This tiny corner of the internet is a reminder to smile today.</p><span class="note-signoff">made with love ✧</span></div>
+              </div>
+              <div class="desktop-taskbar"><span class="taskbar-start">✦ start</span><div class="taskbar-apps"><button type="button" data-open-window="viewerWindow">▧ Memories</button><button type="button" data-open-window="galleryWindow">▧ Gallery</button></div><span class="taskbar-time" id="taskbarTime">♡</span></div>
+            </div>
+          </div>
+          <div class="monitor-chin"><span>♡ little universe</span><span class="monitor-power"></span></div>
+        </div>
+        <div class="computer-stand"></div><div class="computer-base"></div>
+        <div class="computer-sticker sticker-left">made with ♡</div><div class="computer-sticker sticker-right">✦ cute memories ✦</div>
+      </div>
+      <p class="section-footnote">Tip: on a phone, swipe left or right across a photo to move between memories.</p>
+    </section>
+
+    <section class="gallery-section section-shell" id="gallery">
+      <div class="section-heading">
+        <p class="eyebrow">chapter 04 · moments on repeat</p>
+        <h2>A gallery that <span>never sits still</span></h2>
+        <p>Your photos drift through this little scrapbook on their own. Pause whenever you want to stay a little longer.</p>
+      </div>
+      <div class="gallery-board">
+        <div class="gallery-decor decor-sun">☼</div><div class="gallery-decor decor-heart">♡</div><div class="gallery-decor decor-star">✦</div>
+        <div class="polaroid-stack" id="polaroidStack">
+          <div class="polaroid polaroid-back back-left"><div class="polaroid-placeholder">✿</div><span>a sweet memory</span></div>
+          <div class="polaroid polaroid-back back-right"><div class="polaroid-placeholder">♡</div><span>little moments</span></div>
+          <figure class="polaroid polaroid-front" id="mainPolaroid">
+            <div class="gallery-photo" id="galleryPhoto"><div class="empty-gallery"><span>✿</span><strong>Your photos belong here</strong><small>Add images in <code>js/config.js</code>.</small></div></div>
+            <figcaption id="galleryCaption">the best moments are the little ones</figcaption>
+            <span class="polaroid-tape"></span>
+          </figure>
+        </div>
+        <div class="gallery-controls"><button class="round-control" id="galleryPrev" type="button" aria-label="Previous photo">←</button><div class="gallery-control-center"><span id="galleryCounter">0 / 0</span><div class="progress-track"><i id="galleryProgress"></i></div><button id="galleryPlay" class="text-button" type="button">Ⅱ Pause slideshow</button></div><button class="round-control" id="galleryNext" type="button" aria-label="Next photo">→</button></div>
+      </div>
+    </section>
+
+    <section class="final-section section-shell" id="final-note">
+      <div class="final-card">
+        <span class="final-star star-a">✦</span><span class="final-star star-b">✧</span><span class="final-heart">♡</span>
+        <p class="eyebrow">one last little thing</p>
+        <h2 id="finalTitle">Happy Birthday!</h2>
+        <p class="final-message" id="finalMessage">I wanted to create a little place filled with music, memories, letters, and tiny surprises. I hope every little gift makes you smile.</p>
+        <div class="final-actions"><button class="primary-button" id="celebrateAgain" type="button">Celebrate again ✨</button><a class="secondary-button" href="#gifts">Visit the gifts ↗</a></div>
+        <p class="final-signature">a little universe, made just for you ♡</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><span>crafted with ♡ and a little sparkle</span><a href="#welcome">back to the beginning ↑</a></footer>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <audio id="backgroundMusic" loop preload="none"></audio>
+  <script src="js/config.js"></script>
+  <script src="js/effects.js"></script>
+  <script src="js/gift-box.js"></script>
+  <script src="js/gifts.js"></script>
+  <script src="js/memory-pc.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
